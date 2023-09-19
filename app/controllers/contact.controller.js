@@ -2,9 +2,7 @@ const ContactService = require("../services/contact.service");
 const MongoDB = require("../utils/mongodb.util");
 const ApiError = require("../api-error");
 
-
 const { application } = require("express");
-
 
 exports.create = (req, res) => {
     res.send({ message: "create handler"} );
