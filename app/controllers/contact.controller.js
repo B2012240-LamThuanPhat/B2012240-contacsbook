@@ -1,13 +1,10 @@
 const ContactService = require("../services/contact.service");
 const MongoDB = require("../utils/mongodb.util");
 const ApiError = require("../api-error");
-const ContactService = require("../services/contact.service");
-const ContactService = require("../services/contact.service");
-const ContactService = require("../services/contact.service");
-const ContactService = require("../services/contact.service");
+
+
 const { application } = require("express");
-const ContactService = require("../services/contact.service");
-const ContactService = require("../services/contact.service");
+
 
 exports.create = (req, res) => {
     res.send({ message: "create handler"} );
@@ -32,7 +29,7 @@ exports.findAll = async (req, res,next) => {
      return res.send(documents);
 };
 
-exports.findOne = async (req, res) => {
+exports.findOne = async (req, res, next) => {
     try {
         const ContactService = new ContactService(MongoDB.client);
         const document = await ContactService.findById(req.params.id);
@@ -48,7 +45,6 @@ exports.findOne = async (req, res) => {
             )
         );
     }
-    res.send({ message: "findOne handler" });
 };
 
 exports.update = async (req, res) =>{
