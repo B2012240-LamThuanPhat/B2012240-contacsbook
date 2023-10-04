@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Vi Dat",
+  "author": "Thuan Phat",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
